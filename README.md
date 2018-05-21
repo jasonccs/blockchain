@@ -26,7 +26,9 @@
 1. 启动web服务器
 ```
 ~$ cd ~/repo/chapter1
-~/repo/chapter1$ python -m SimpleHTTPServer
+~/repo/chapter1$ python -m SimpleHTTPServer python2 
+~/repo/chapter1$ python -m http.server python3 
+
 ```
 2. 在试验环境的嵌入浏览器中点击刷新按钮。
 
