@@ -21,10 +21,10 @@ const deployedContract = VotingContract.new(['Rama', 'Nick', 'Jose'], {
 });
 setTimeout(() => {
     console.log(deployedContract.address)
-    const contractInstance = VotingContract.at(deployedContract.address)
+    const contractInstance = VotingContract.at(deployedContract.address);
 
-    console.log(contractInstance.totalVotesFor.call('Rama'))
-    contractInstance.voteForCandidate('Rama', {from: web3.eth.accounts[0]})
-    contractInstance.voteForCandidate('Rama', {from: web3.eth.accounts[0]})
+    console.log(contractInstance.totalVotesFor.call('Rama'));
+    contractInstance.voteForCandidate('Rama', {from: web3.eth.accounts[0]});
+    contractInstance.voteForCandidate('Rama', {from: web3.eth.accounts[0]});
     console.log(contractInstance.totalVotesFor.call('Rama'))
 }, 1000);
